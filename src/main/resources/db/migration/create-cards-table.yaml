@@ -20,7 +20,7 @@ databaseChangeLog:
                     nullable: false
               - column:
                   name: card_number
-                  type: VARCHAR(255)  # будем хранить зашифрованное значение
+                  type: VARCHAR(255)
                   constraints:
                     unique: true
                     nullable: false
