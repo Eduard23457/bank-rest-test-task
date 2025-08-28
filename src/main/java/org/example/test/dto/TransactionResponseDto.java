@@ -25,4 +25,6 @@ public class TransactionResponseDto {
 
     @Schema(description = "Дата и время транзакции", example = "2025-08-28T15:30:00")
     private LocalDateTime createdAt;
+
+
 }

@@ -2,7 +2,6 @@ package org.example.test.mapper;
 
 import org.example.test.dto.CardRequestDto;
 import org.example.test.dto.CardResponseDto;
-import org.example.test.dto.UserRequestDto;
 import org.example.test.entity.Card;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

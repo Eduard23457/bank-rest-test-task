@@ -6,7 +6,6 @@ import org.example.test.dto.CardResponseDto;
 import org.example.test.entity.Card;
 import org.example.test.entity.User;
 import org.example.test.mapper.CardMapper;
-import org.example.test.mapper.UserMapper;
 import org.example.test.repository.CardRepository;
 import org.example.test.repository.UserRepository;
 import org.springframework.stereotype.Service;

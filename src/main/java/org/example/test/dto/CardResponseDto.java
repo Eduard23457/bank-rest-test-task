@@ -5,8 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.example.test.entity.CardStatus;
-import org.example.test.entity.User;
-
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
@@ -24,6 +22,8 @@ public class CardResponseDto {
     @Schema(description = "Номер карты, замаскированный для безопасности (**** **** **** 1234)", example = "**** **** **** 1234")
     private String number;
 
+    private String username;
+
     @Schema(description = "Дата окончания действия карты", example = "2027-08-28")
     private LocalDate date;
 
@@ -31,5 +31,7 @@ public class CardResponseDto {
     private CardStatus status;
 
     @Schema(description = "Баланс карты", example = "1500")
-    private BigDecimal balance;
+    private BigDecimal balance = BigDecimal.ZERO;
+
+
 }

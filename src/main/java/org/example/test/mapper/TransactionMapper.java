@@ -15,8 +15,8 @@ public interface TransactionMapper {
     @Mapping(source = "toCardId", target = "toCard.id")
     Transaction toEntity(TransactionRequestDto dto);
 
-    @Mapping(source = "fromCard.id", target = "fromCardId")
-    @Mapping(source = "toCard.id", target = "toCardId")
+    @Mapping(source = "fromCard.id", target = "fromCardNumber")
+    @Mapping(source = "toCard.id", target = "toCardNumber")
     TransactionResponseDto toDto(Transaction transaction);
 
     List<TransactionResponseDto> toDtoList(List<Transaction> transactions);

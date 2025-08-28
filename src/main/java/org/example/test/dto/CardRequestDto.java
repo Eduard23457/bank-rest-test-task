@@ -15,10 +15,12 @@ public class CardRequestDto {
     @Schema(description = "ID пользователя, которому принадлежит карта", example = "1")
     private Long userId;
 
+    @Schema(description = "Дата окончания действия карты", example = "2027-08-28")
+    private LocalDate date;
+
     @Schema(description = "Статус карты", example = "ACTIVE")
     private CardStatus status;
 
-    @Schema(description = "Дата окончания действия карты", example = "2027-08-28")
-    private LocalDate date;
+
 
 }
